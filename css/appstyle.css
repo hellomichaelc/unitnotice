@@ -1,0 +1,45 @@
+.graph-title {
+	padding: 20px 20px 0px 20px;
+	font-weight: bold;
+}
+
+.graph {
+	padding: 20px;
+}
+
+.list-container {
+	margin-top: 55px;
+	border-top: 1px solid #e8e8e8;
+}
+
+.item-amount {
+	padding-top: 15px;
+}
+
+.item-name {
+	padding-top: 15px;
+	padding-bottom: 10px;
+}
+
+.ls-component {
+	display: none;
+	padding: 0px;
+}
+
+.list-group .values {
+	float: right;
+}
+
+.media-list-group .list-group-item {
+	padding: 8px 12px;
+}
+
+.ls-component .list-group-item {
+	cursor: none;
+	color: #848484;
+}
+
+.media-list-group .list-group-item  {
+	border-bottom: 1px solid #e8e8e8;
+	margin-bottom: 0px;
+}

@@ -1,0 +1,225 @@
+		<html>
+		<head>
+			<link href="http://assets.livestax.com/theme-0.0.1.css" rel="stylesheet" type="text/css" media="all">
+			<link href="css/causeway-livestax.min.css" rel="stylesheet" media="screen">
+			<link rel="stylesheet" type="text/css" href="css/appstyle.css">
+			<script src="http://assets.livestax.com/livestax-0.2.0.min.js"></script>
+			<script src="js/jquery.min.js"></script>
+			<script src="js/bootstrap.min.js"></script>
+			<script src="js/Chart.js"></script>
+			
+		</head>
+
+			<script type="text/javascript">
+				<!--
+				function toggle_visibility(id) {
+					var e = document.getElementById(id);
+					if(e.style.display == 'block')
+						e.style.display = 'none';
+					else
+						e.style.display = 'block';
+				}
+		//-->
+		</script>
+
+			<div style="width: 307px; height: 250px;">
+				<div class="graph-title text-normal">Last 3 Months Notice Values</div>
+				<canvas class="graph" id="canvas" height="250" width="307"></canvas>
+			</div>
+
+
+		<script>
+		var randomScalingFactor = function(){ return Math.round(Math.random()*100)};
+
+		var barChartData = {
+			labels : ["May","June","July"],
+			datasets : [
+				{
+					fillColor : "#5699a9",
+					strokeColor : "#5699a9",
+					highlightFill:  "#5699a9",
+					highlightStroke: "rgba(220,220,220,1)",
+					data: [15893, 7943, 16829,]
+				},
+			]
+
+		}
+		window.onload = function(){
+			var ctx = document.getElementById("canvas").getContext("2d");
+			window.myBar = new Chart(ctx).Bar(barChartData, {
+				responsive : true,
+				barShowStroke : false,
+				scaleLineWidth: 1,
+				barValueSpacing : 33,
+				scaleOverride: true,
+      			scaleSteps: 5,
+     			scaleStepWidth: 5000,
+      			scaleStartValue: 0,
+      			scaleFontColor: "#323232",
+				scaleFontFamily: "'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif",
+			});
+		}
+
+		</script>
+
+		<div class="list-container">
+		<div class="list-group media-list-group">
+			<div class="list-group-item">
+				<div class="media-content" onclick="toggle_visibility('more-info-one');">
+				<h4 class="item-name text-normalplus pull-left ellipsize">All Contracts Under Notice</h4>
+					<span class="item-amount text-info text-normal pull-right">&pound70,919</span>
+				</div>
+			</div>
+
+		    <div class="ls-component" id="more-info-one">
+			    <div class="list-group-item unselectable">
+			        <div class="values">
+			            <span class="itemvalue text-normal">&pound471</span>
+			    	</div>
+			   	    <div class="text-normal">Anchor Security Ltd</div>
+			    	</div>
+
+			     <div class="list-group-item unselectable">
+			         <div class="values">
+			             <span class="itemvalue text-normal">&pound2,541</span>
+			     	</div>
+			    	    <div class="text-normal">Anglia Ruskin University</div>
+			     	</div>
+
+			     <div class="list-group-item unselectable">
+			         <div class="values">
+			             <span class="itemvalue text-normal">&pound595</span>
+			     	</div>
+			    	    <div class="text-normal">ASDA Stores Ltd</div>
+			     	</div>
+
+			     <div class="list-group-item unselectable">
+			         <div class="values">
+			             <span class="itemvalue text-normal">&pound10,438</span>
+			     	</div>
+			    	    <div class="text-normal">Barnes Construction PLC</div>
+			     	</div>
+
+			     <div class="list-group-item unselectable">
+			         <div class="values">
+			             <span class="itemvalue text-normal">&pound7,066</span>
+			     	</div>
+			    	    <div class="text-normal">Cruden Construction Ltd</div>
+			     	</div>
+
+			     <div class="list-group-item unselectable">
+			         <div class="values">
+			             <span class="itemvalue text-normal">&pound8,536</span>
+			     	</div>
+			    	    <div class="text-normal">Cruden Property Services Ltd</div>
+			     	</div>
+
+			     <div class="list-group-item unselectable">
+			         <div class="values">
+			             <span class="itemvalue text-normal">&pound2,364</span>
+			     	</div>
+			    	    <div class="text-normal">Drew Smith Ltd</div>
+			     	</div>
+
+			     <div class="list-group-item unselectable">
+			         <div class="values">
+			             <span class="itemvalue text-normal">&pound3,317</span>
+			     	</div>
+			    	    <div class="text-normal">Excalon Ltd</div>
+			     	</div>
+
+			     <div class="list-group-item unselectable">
+			         <div class="values">
+			             <span class="itemvalue text-normal">&pound1,486</span>
+			     	</div>
+			    	    <div class="text-normal">Falco Construction Ltd</div>
+			     	</div>
+
+			     <div class="list-group-item unselectable">
+			         <div class="values">
+			             <span class="itemvalue text-normal">&pound2,318</span>
+			     	</div>
+			    	    <div class="text-normal">Gleeds</div>
+			     	</div>
+
+			     <div class="list-group-item unselectable">
+			         <div class="values">
+			             <span class="itemvalue text-normal">&pound1,289</span>
+			     	</div>
+			    	    <div class="text-normal">Keepmoat Property Services Limited</div>
+			     	</div>
+
+			     <div class="list-group-item unselectable">
+			         <div class="values">
+			             <span class="itemvalue text-normal">&pound30,498</span>
+			     	</div>
+			    	    <div class="text-normal">Willmott Dixon Limited</div>
+			     	</div>
+		    </div>
+
+			<div class="list-group media-list-group">
+				<div class="list-group-item">
+					<div class="media-content" onclick="toggle_visibility('more-info-two');">
+					<h4 class="item-name text-normalplus pull-left ellipsize">Under Notice This Month</h4>
+						<span class="item-amount text-info text-normal pull-right">&pound16,829</span>
+					</div>
+				</div>
+
+			    <div class="ls-component" id="more-info-two">
+				    <div class="list-group-item unselectable">
+				        <div class="values">
+				            <span class="itemvalue text-normal">&pound2,541</span>
+				    	</div>
+				   	    <div class="text-normal">Anglia Ruskin University</div>
+				    	</div>
+
+				     <div class="list-group-item unselectable">
+				         <div class="values">
+				             <span class="itemvalue text-normal">&pound10,438</span>
+				     	</div>
+				    	    <div class="text-normal">Barnes Construction PLC</div>
+				     	</div>
+
+				     <div class="list-group-item unselectable">
+				         <div class="values">
+				             <span class="itemvalue text-normal">&pound2,364</span>
+				     	</div>
+				    	    <div class="text-normal">Drew Smith Ltd</div>
+				     	</div>
+
+				     <div class="list-group-item unselectable">
+				         <div class="values">
+				             <span class="itemvalue text-normal">&pound1,486</span>
+				     	</div>
+				    	    <div class="text-normal">Falco Construction Ltd</div>
+				     	</div>
+			    </div>
+
+			    <div class="list-group media-list-group">
+			    	<div class="list-group-item">
+			    		<div class="media-content" onclick="toggle_visibility('more-info-three');">
+			    		<h4 class="item-name text-normalplus pull-left ellipsize">Losing Customer</h4>
+			    			<span class="item-amount text-info text-normal pull-right">&pound35,816</span>
+			    		</div>
+			    	</div>
+
+			        <div class="ls-component" id="more-info-three">
+			    	    <div class="list-group-item unselectable">
+			    	        <div class="values">
+			    	            <span class="itemvalue text-normal">&pound30,498</span>
+			    	    	</div>
+			    	   	    <div class="text-normal">Willmott Dixon Limited</div>
+			    	    	</div>
+
+			    	     <div class="list-group-item unselectable">
+			    	         <div class="values">
+			    	             <span class="itemvalue text-normal">&pound5,318</span>
+			    	     	</div>
+			    	    	    <div class="text-normal">Willmott Dixon Limited</div>
+			    	     	</div>
+			        </div>
+
+
+		<script src="js/causeway-livestax.min.js"></script>
+		</body>
+		</html>
