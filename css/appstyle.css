@@ -3,12 +3,45 @@
 	font-weight: bold;
 }
 
+.graph-labels {
+	padding: 35px 0px 20px 20px;
+	width: 50%;
+}
+
+.graph-label {
+	position: relative;
+	margin-bottom: 8px;
+}
+
+.circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  display: block;
+  position: absolute;
+  top: 2px;
+  }
+
+.legend-label {
+    margin-left: 22px;
+  }
+
+h5 {
+	padding-bottom: 0px;
+	vertical-align: middle;
+}
+
+.img-circle {
+	margin-right: 5px;
+}
+
 .graph {
 	padding: 20px;
+	padding-left: 5px;
 }
 
 .list-container {
-	margin-top: 55px;
+	margin-top: 190px;
 	border-top: 1px solid #e8e8e8;
 }
 
