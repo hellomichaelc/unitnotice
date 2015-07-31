@@ -22,24 +22,35 @@
 		//-->
 		</script>
 
+		<div class="product-selection form-group">
+			<select class="form-control" id="selectRegion">
+				<option>Cato</option>
+				<option>Causeway Mobile</option>
+				<option>CJM</option>
+				<option>CPA</option>
+				<option>Dashboards</option>
+				<option>ECM</option>
+				<option>Estimating</option>
+				<option>Job Master</option>
+				<option>PDS</option>
+				<option>Telematics</option>
+			</select>
+		</div>
+
 		<div id="canvas-holder">
-			<div class="graph-title text-normal">Products With Most Notices</div>
+			<div class="graph-title text-normal">Notice Values Breakdown</div>
 			<div class="graph-labels text-normal pull-left">
 			<div class="graph-label">
 			  <span class="circle" style="background:#dfdddf;"></span>
-			  <span class="legend-label text-normalminus">Causeway Mobile</span>
+			  <span class="legend-label text-normalminus">Under Risk</span>
 			</div>
 			<div class="graph-label">
 			  <span class="circle" style="background:#3fbfbe;"></span>
-			  <span class="legend-label text-normalminus">Dashboards</span>
+			  <span class="legend-label text-normalminus">Under Notice</span>
 			</div>
 			<div class="graph-label">
 			  <span class="circle" style="background:#eae4b0;"></span>
-			  <span class="legend-label text-normalminus">Telematics</span>
-			</div>
-			<div class="graph-label">
-			  <span class="circle" style="background:#CDC4A0;"></span>
-			  <span class="legend-label text-normalminus">Cato</span>
+			  <span class="legend-label text-normalminus">Standard</span>
 			</div>
 			</div>
 
@@ -49,24 +60,19 @@
 	<script>
 		var pieData = [
 				{
-					value: 10,
+					value: 30746,
 					color: "#dfdddf",
-					label: "Causeway Mobile"
+					label: "Under Risk"
 				},
 				{
-					value: 15,
+					value: 70919,
 					color: "#3fbfbe",
-					label: "Dashboards"
+					label: "Under Notice"
 				},
 				{
-					value: 5,
+					value: 10764,
 					color: "#eae4b0",
-					label: "Telematics"
-				},
-				{
-					value: 8,
-					color: "#CDC4A0",
-					label: "Cato"
+					label: "Standard"
 				}
 			];
 
