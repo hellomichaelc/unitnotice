@@ -9,7 +9,7 @@
 }
 
 .graph-labels {
-	padding: 35px 0px 20px 20px;
+	padding: 25px 0px 20px 20px;
 	width: 50%;
 }
 
@@ -41,12 +41,12 @@ h5 {
 }
 
 .graph {
-	padding: 20px;
+	padding: 15px 20px 20px 20px;
 	padding-left: 5px;
 }
 
 .list-container {
-	margin-top: 170px;
+	margin-top: 160px;
 	border-top: 1px solid #e8e8e8;
 }
 
