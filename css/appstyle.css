@@ -4,12 +4,12 @@
 }
 
 .graph-title {
-	padding: 10px 20px 0px 20px;
+	padding: 5px 20px 0px 20px;
 	font-weight: bold;
 }
 
 .graph-labels {
-	padding: 25px 0px 20px 20px;
+	padding: 15px 0px 20px 20px;
 	width: 50%;
 }
 
@@ -41,7 +41,7 @@ h5 {
 }
 
 .graph {
-	padding: 15px 20px 20px 20px;
+	padding: 10px 20px 20px 20px;
 	padding-left: 5px;
 }
 
